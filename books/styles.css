@@ -1,0 +1,22 @@
+.styleaMig {
+    float:left;
+    margin-left: 20px;
+
+}
+
+.card-panel { 
+    width: 270px;
+    }
+
+
+
+@media only screen
+and (max-width : 480px) {
+.card-panel hoverable { width:100px;}
+}
+
+
+@media only screen
+and (max-width : 767px) {
+.card-panel hoverable { width:400px;}
+}
