@@ -39,7 +39,7 @@ var dLoadUrl = "";
 
 
 function searchITbooksAPI(bookselect) {
-    var url = "http://it-ebooks-api.info/v1/search/" + bookselect;
+    var url = "https://it-ebooks-api.info/v1/search/" + bookselect;
     console.log(url);
     $.ajax({
         type: "GET",
@@ -123,7 +123,7 @@ function getBooks() {
 
         /*document.getElementById("dwnLoadBtn").addEventListener("click",downLoad);*/
         function downLoad(id) {
-            var url = "http://it-ebooks-api.info/v1/book/" + id;
+            var url = "https://it-ebooks-api.info/v1/book/" + id;
             console.log(url);
 
             $.ajax({
