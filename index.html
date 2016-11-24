@@ -1,73 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Noble House: Home</title>
-  <link href="styles/normalize.css" rel="stylesheet">
-  <link href="styles/main.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <title></title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="Blue Leopard logo"></a>
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="index.html">Hem</a></li>
-          <li><a href="menu.html">Meny</a></li>
-          <li><a href="location.html">Plats &amp; Tider</a></li>
-        </ul>
-      </nav>
-     
-    </header>
-    <div class="landing">
-      <h1>Noble House</h1>
-      <h2>Nu startar en ny spännande era</h2>
-      <p>Måndagen den 3 december drar Noble House igång sitt nya japanska varmkök. Slå dig ner i vår avslappnade loungemiljö
-        och prova Yakiniku, Gyoza, Teriyakilax, Sukiyaki, Yakitori och mycket annat gott. Vi har förfinat vår sushi- och
-        sashimimeny och allt vi säljer går, precis som tidigare, att få som "take away".</p>
-      <p> Varmt välkommen! /Ted med personal</p>
+
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="userView">
+
+                <div class="background">
+                    <img src="books.png">
+                </div>
+               <!-- <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>-->
+            </div>
+        </li>
+        <li class="clk"><a href="#!"><i class="material-icons">view_module</i>JavaScript</a></li>
+        <li class="clk"><a href="#!" ><i class="material-icons">view_module</i>Node</a></li>
+        <li class="clk"><a href="#!"><i class="material-icons">view_module</i>React</a></li>
+        <li class="clk"><a href="#!"><i class="material-icons">view_module</i>Angular</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Find your JS Dev Book</a></li>
+        <li> </li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    <div class="container">
+        <div class="row">
+            <form>
+         <div class="input-field col s12">
+        <select id="select">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Node">Node</option>
+        <option value="React">React</option>
+    </select>
+    
     </div>
+      
+        <div id="books" class="col s12">
 
-    <div class="featured-info">
-      <h3>Meny</h3>
-      <p>Alltid tillagat med dagsfärska ingredienser, varmrätter från det japanska köket såväl som sushi serveras till lunch
-        och ala carte.
-      </p>
+        </div>
+        
+        </div> 
 
-      <p class="button"><a href="menu.html">Se Meny</a></p>
     </div>
+  
+    <!-- Här länkas JavaScript filen till dokumentet-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="books.js"></script>
 
-    <div class="featured-info">
-      <h3>Plats</h3>
-      <p>Noble House ligger på bottenplan i Origo huset -Askim. Goda parkeringsmöjligheter</p>
-
-      <p class="button"><a href="location.html">Plats &amp; öppettider</a></p>
-    </div>
-
-    <div class="featured-info">
-      <h3>Nyheter &amp; Events</h3>
-      <ul>
-        <li>Sushiskola på allt om mat mässan</li>
-        <li></li>
-        <li>Veckans Öl</li>
-        <li>Musashino, en öl direkt från Japan</li>
-        <li>Dagens varmrätt</li>
-        <li>Personal sökes</li>
-      </ul>
-    </div>
-
-    <footer>
-      <h4>Kontakta oss</h4>
-
-      <p>Bordsbeställning görs senast 1 timme i förväg.</p>
-      <p>031-28 65 11</p>
-
-      <p>Vi tar gärna emot förfrågningar om catering, företagsluncher eller andra event.</p>
-      <p>mail@n-house.se</p>
-    </footer>
-  </div>
 </body>
 
 </html>
